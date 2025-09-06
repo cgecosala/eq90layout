@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>tom im sorry</title>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="jquery.ui.touch-punch.min.js"></script>
+
+<script>  var zindie=1;
+    $(function() { 
+      $('img' ).draggable();   
+      $('img').mousedown(function() {zindie+=1;
+        $(this).css("z-index", zindie);}) 
+      $('img').dblclick(function(){zindie=1;
+        $(this).css("z-index", zindie);
+    })
+  });
+</script>
+</head>
+
+<body>
+<body background="layout.jpg">
+<img src="table1.png" width="700" height="300">
+<img src="table2.png" width="700" height="300">
+</body>
+</html>
