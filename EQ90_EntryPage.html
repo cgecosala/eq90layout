@@ -1,6 +1,6 @@
 <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<style type="text/css">
+  <style type="text/css">
     /* Base Typography */
     body, p, div {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -12,19 +12,20 @@
       margin: 0;
       padding: 20px;
       background: #ffffff;
-      text-align: center;
+      text-align: center; /* centers the container */
     }
 
     /* Centered container */
     .container {
       max-width: 500px;
-      margin: 0 auto;
-      text-align: left;
+      margin: 0 auto;      /* centers the block */
+      text-align: left;    /* keeps internal content left-aligned */
     }
 
     h1, h2, h3 {
       margin: 10px 0;
       font-weight: 600;
+      text-align: left;
     }
 
     h1 { font-size: 28px; }
@@ -37,7 +38,9 @@
     }
 
     img {
+      display: block;
       max-width: 100%;
+      margin: 0 auto; /* centers images */
     }
 
     .header-img {
@@ -46,32 +49,17 @@
     }
 
     .section {
-      margin-top: 22px;
+      margin-top: 20px;
     }
 
-    /* Mobile */
+    /* Mobile Adjustments */
     @media screen and (max-width: 480px) {
       body {
-        padding: 20px 16px;
+        padding: 15px;
       }
-
-      .container {
-        max-width: 100%;
-        text-align: left;
-      }
-
-      body, p, div {
-        font-size: 17px;     /* larger mobile text */
-        line-height: 1.55;
-      }
-
-      h1 { font-size: 32px; }  /* bigger PIN */
-      h2 { font-size: 22px; }
-      h3 { font-size: 18px; }
-
-      .section {
-        margin-top: 26px;   /* more breathing room */
-      }
+      h1 { font-size: 24px; }
+      h2 { font-size: 18px; }
+      h3 { font-size: 15px; }
     }
   </style>
 </head>
@@ -81,14 +69,17 @@
 <div class="container">
 
   <!-- Header Logo -->
-  <img class="header-img" src="butterflymx-banner.png" height="35" alt="ButterflyMX Logo" />
+  <img class="header-img" src="https://cgecosala.github.io/eq90layout/butterflymx-banner.png" height="35" alt="ButterflyMX Logo" />
 
   <!-- Purple Bar -->
-  <img src="purple-bar.png" alt="" style="margin: 20px 0;" />
+  <img src="https://cgecosala.github.io/eq90layout/purple-bar.png" alt="" style="margin: 20px 0;" />
 
   <!-- Intro -->
-  <h2>Hi, Home Studios Inc sent you a Visitor Pass.</h2>
+  <h2>Home Studios, Inc. sent you a Visitor Pass.</h2>
 
+<h2>
+    <u>Location</u>
+</h2>
   <h3>
     Home Studios Inc<br>
     Unit 301<br>
@@ -99,25 +90,28 @@
 
   <!-- Pass Details -->
   <div class="section">
-    <h3><u>Visitor Pass details</u></h3>
-    <p>Starts: Nov 22, 2025 10:00am<br>
-       Ends: Nov 22, 2025 6:01pm
+    <h2><u>Visitor Pass details</u></h2>
+    Starts: Nov 22, 2025 10:00am
+    <br>
+    Ends: Nov 22, 2025 6:01pm
     </p>
   </div>
 
   <!-- PIN -->
   <div class="section">
-    <p style="font-size: 16px; font-weight: 600;">PIN code:</p>
-    <h1 style="letter-spacing: 2px; text-align: center;">803471</h1>
+    <p style="font-size: 16px; font-weight: 600; text-align: center;">PIN code:</p>
+    <h1 style="font-size: 38px; letter-spacing: 2px; text-align: center;">803471</h1>
   </div>
 
   <!-- Instructions -->
   <div class="section">
-    <h2>How to use your pass</h2>
+    <h2><u>
+        How to use your pass
+    </u></h2>
 
-    <h3>
+    <p>
       <b>On the intercom,</b> tap <b>Visitor Pass</b> and follow the instructions below:
-    </h3>
+    </p>
 
     <p><b>Using the PIN code:</b><br>
        Enter the above PIN code on the intercom and tap “enter” to unlock the door or gate.
@@ -129,18 +123,12 @@
   </div>
 
   <!-- QR Code -->
-  <img src="butterflymx_QRCode.png" alt="QR Code" />
+  <img src="https://cgecosala.github.io/eq90layout/butterflymx_QRCode.png" alt="QR Code" />
 
   <!-- Apple Wallet -->
-  <a href="https://tracking.butterflymx.com/ls/click?upn=u001.7mDJ2D-2BO9gkxWkkLKx2cf8f1gfT7p-2FZBMSxsZ4QDLYI-2FJX6tzaSsCl1x02KQcmhVsPE4LgpFRUtepA-2B8K3-2BxwqRM5g0bNGsjjGfuYW012-2F6n6x-2BXYu9eRDUWSeBdfeuAgAtCk28K-2BtDxl5mMhq85UqG6NcnQbR3HsRSGgr4Dgu60uRRlX0qbP-2F63Fy-2BEACahDzbzFh7aBIRO-2FqbDhBGx3g-3D-3DJaJE_Q7TniuxF8l-2B7zf4XnSSSgAobpLCbM0gw-2BQZAaaNZcaSYQmPaDzNXSOZC6SOJPbI0xPLCGH9IqsNcR6l-2FRZIps8otCfOX4-2FYA4-2Bx7KOzDbtnZ3pYRc4R-2F5AY4biN1i8UTsqU7mwTb29l8XqTJ2yXkT-2BvgXwtb9LqpmDXuEOd5Du7iwpGGbYNOulEXZjvCeeZccqTS-2BYpKOzP1SRaFQCxooEPvPdiVjbLrw4Liz5Pr-2FJclrEEBiyAVsD-2Bc9Z78xoa1uI-2Fo9XmB-2F5Ng8cijKndr2X4ALaG-2BKPdKW6UUIpfe0zGL3gyfuducYioY4-2BmX0gCBHRwy4wU1iUS9Jug-2FNqQH96pyW2tXTusfC8fyQqjMvrZW25jaXN-2B748GJNsMYCM7QtzGKi9B5JOu-2Bx5LiurYP-2F-2FPlfKhgdLbMruKU75Tcd26Wxn1dWqNi4l-2B7lVesOboj9A9oKdg4fiMATtkksq5xWbUREJmNGxPB9r6SihyTUjddo855Gy2WmxDBr9iWS4RI">
-    <img 
-    src="https://cdsassets.apple.com/live/7WUAS350/images/ios/add-to-apple-wallet-logo.png" 
-    height="39" 
-    alt="Add to Apple Wallet" 
-    style="margin: 20px auto; display: block;" 
-  />
+  <a href="">
+    <img src="https://cdsassets.apple.com/live/7WUAS350/images/ios/add-to-apple-wallet-logo.png" height="39" alt="Add to Apple Wallet" style="margin-top: 20px;" />
   </a>
-</a>
 
 </div>
 
