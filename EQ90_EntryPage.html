@@ -1,6 +1,6 @@
 <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <style type="text/css">
+<style type="text/css">
     /* Base Typography */
     body, p, div {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -12,20 +12,19 @@
       margin: 0;
       padding: 20px;
       background: #ffffff;
-      text-align: center; /* centers the container */
+      text-align: center;
     }
 
     /* Centered container */
     .container {
       max-width: 500px;
-      margin: 0 auto;      /* centers the block */
-      text-align: left;    /* keeps internal content left-aligned */
+      margin: 0 auto;
+      text-align: left;
     }
 
     h1, h2, h3 {
       margin: 10px 0;
       font-weight: 600;
-      text-align: left;
     }
 
     h1 { font-size: 28px; }
@@ -38,23 +37,41 @@
     }
 
     img {
-      display: block;
       max-width: 100%;
-      margin: 0 auto; /* centers images */
+    }
+
+    .header-img {
+      display: block;
+      margin: 0;
     }
 
     .section {
-      margin-top: 20px;
+      margin-top: 22px;
     }
 
-    /* Mobile Adjustments */
+    /* Mobile */
     @media screen and (max-width: 480px) {
       body {
-        padding: 15px;
+        padding: 20px 16px;
       }
-      h1 { font-size: 28px; }
-      h2 { font-size: 24px; }
+
+      .container {
+        max-width: 100%;
+        text-align: left;
+      }
+
+      body, p, div {
+        font-size: 17px;     /* larger mobile text */
+        line-height: 1.55;
+      }
+
+      h1 { font-size: 32px; }  /* bigger PIN */
+      h2 { font-size: 22px; }
       h3 { font-size: 18px; }
+
+      .section {
+        margin-top: 26px;   /* more breathing room */
+      }
     }
   </style>
 </head>
@@ -64,7 +81,7 @@
 <div class="container">
 
   <!-- Header Logo -->
-  <img src="butterflymx-banner.png" height="35" alt="ButterflyMX Logo" />
+  <img class="header-img" src="butterflymx-banner.png" height="35" alt="ButterflyMX Logo" />
 
   <!-- Purple Bar -->
   <img src="purple-bar.png" alt="" style="margin: 20px 0;" />
